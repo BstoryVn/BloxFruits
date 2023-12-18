@@ -3,7 +3,7 @@ _G.FpsBoost = false
 _G.Webhook = ""
 
 getgenv().Chatkill = {
-    "I'm Using Synergy Hub", "No Skill? Use Synergy Hub now", "I got the Synergy Hub auto bounty script",
+    "I'm Bstory", "I Love Kim Thu 8C4", "Config By Bstory",
     "hello i'm the founder of Synergy Hub"
 }
 getgenv().Region_Hop = {
