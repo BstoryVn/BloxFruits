@@ -1,9 +1,10 @@
 _G.Team = "Pirates"
-_G.FpsBoost = true
+_G.FpsBoost = false
 _G.Webhook = ""
 
 getgenv().Chatkill = {
-    "ez ", "cf by minh", "ez",
+    "I'm Bstory", 
+    "Tic Tok : bstoryvn"
 }
 getgenv().Region_Hop = {
     ["Enable"] = true, -- true/false
@@ -16,9 +17,9 @@ _G.Setting = {
     ["Start Hunting"] = true, -- Bro wtf don't turn it off
     ["Ken Haki"] = true,
     ["WhiteScreen"] = false,
-    ["FruitStuff"] = false, -- Auto Buy and Store Fruits
+    ["FruitStuff"] = true, -- Auto Buy and Store Fruits
     ["Run"] = 3500, -- As the name, you'll run when the health below ...
-    ["MaxHealth"] = 5500,
+    ["MaxHealth"] = 5000,
     ["Time&Bounty Counter"] = true,
     ["Click Delay"] = 0,
     ["SkipPlayerWhenBeingLowHealth"] = false,
@@ -43,35 +44,39 @@ _G.Setting = {
         }
     },
     ["Melee"] = {
-        ["Time"] = 1.5,
+        ["Time"] = 1,
         ["Enable"] = true,
-        ["Z"] = {["Enable"] = true, ["HoldTime"] = 0},
-        ["X"] = {["Enable"] = true, ["HoldTime"] = 0},
-        ["C"] = {["Enable"] = true, ["HoldTime"] = 0}
+        ["Z"] = {["Enable"] = true, ["HoldTime"] = 0.75},
+        ["X"] = {["Enable"] = true, ["HoldTime"] = 0.1},
+        ["C"] = {["Enable"] = true, ["HoldTime"] = 0.1}
     },
     ["Fruit"] = {
         ["Time"] = 1,
         ["Enable"] = false,
-        ["Z"] = {["Enable"] = true, ["HoldTime"] = 1.75},
+        ["Z"] = {["Enable"] = true, ["HoldTime"] = 0.75},
         ["X"] = {["Enable"] = true, ["HoldTime"] = 0},
         ["C"] = {["Enable"] = true, ["HoldTime"] = 0},
         ["V"] = {["Enable"] = true, ["HoldTime"] = 0},
         ["F"] = {["Enable"] = true, ["HoldTime"] = 0}
     },
     ["Sword"] = {
-        ["Time"] = 1,
-        ["Enable"] = false,
-        ["Z"] = {["Enable"] = true, ["HoldTime"] = 0.3},
-        ["X"] = {["Enable"] = true, ["HoldTime"] = 0.1},
+        ["Time"] = 0.15,
+        ["Enable"] = true,
+        ["Z"] = {["Enable"] = true, ["HoldTime"] = 0},
+        ["X"] = {["Enable"] = false, ["HoldTime"] = 0},
     },
     ["Gun"] = {
-        ["Time"] = 1,
+        ["Time"] = 0.8,
         ["Enable"] = true,
         ["GunMode"] = true,
         ["Z"] = {["Enable"] = true, ["HoldTime"] = 0},
         ["X"] = {["Enable"] = true, ["HoldTime"] = 0},
     }
 }
-
+delay(360,function()
+    if not game.Workspace:FindFirstChild("HiHiHi") then
+      game:GetService("TeleportService"):Teleport(game.PlaceId, game.Players.LocalPlayer)
+    end
+end)
 repeat wait() until game:IsLoaded()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/clgtmm/AutoBounty/main/main.lua"))()
