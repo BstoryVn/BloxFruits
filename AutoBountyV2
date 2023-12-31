@@ -141,17 +141,17 @@ getgenv().Setting = {
     ["Weapons"] = { -- Select Weapon, Self Explain
         ["Melee"] = {
             ["Enable"] = true,
-            ["Delay"] = 2,
+            ["Delay"] = 2.5,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 1.5,
-                    ["TimeToNextSkill"] = 0,
+                    ["HoldTime"] = 0.5,
+                    ["TimeToNextSkill"] = 0.1,
                 },
             [ "X"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0,
-                    ["TimeToNextSkill"] = 0,
+                    ["HoldTime"] = 0.5,
+                    ["TimeToNextSkill"] = 0.1,
                 },
 
                 ["C"] = {
@@ -194,7 +194,7 @@ getgenv().Setting = {
             },
         },
         ["Sword"] = {
-            ["Enable"] = true,
+            ["Enable"] = false,
             ["Delay"] = 1.5,
             ["Skills"] = {
                 ["Z"] = {
@@ -210,13 +210,13 @@ getgenv().Setting = {
             },
         },
         ["Gun"] = {
-            ["Enable"] = false,
-            ["Delay"] = 0.5,
+            ["Enable"] = true,
+            ["Delay"] = 1.5,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0.1,
-                    ["TimeToNextSkill"] = 0,
+                    ["HoldTime"] = 0,
+                    ["TimeToNextSkill"] = 0.1,
                 },
                 ["X"] = {
                     ["Enable"] = true,
