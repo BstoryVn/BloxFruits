@@ -137,7 +137,7 @@ getgenv().Setting = {
         CustomIcon = false,
         Image = "sticker.png", -- The Path Is: W-azure/AutoBounty/Notify
     },
-    ["SpamSkill"] = true, -- Will use all skills as fast as possbile ignore holding skills
+    ["SpamSkill"] = false, -- Will use all skills as fast as possbile ignore holding skills
     ["Weapons"] = { -- Select Weapon, Self Explain
         ["Melee"] = {
             ["Enable"] = true,
