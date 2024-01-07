@@ -4,7 +4,7 @@ end
 --Put Your Key Between ""
 script_key="lqmAvKbLEiCLklZDjmPGlfmRaxKCcEFe";
 DelayTime = 300
-getgenv().FpsBoost = true
+getgenv().FpsBoost = false
 getgenv().Setting = {
     ["Team"] = "Pirates", --Marines
     ["Webhook"] = {
@@ -123,9 +123,9 @@ getgenv().Setting = {
         ["AutoBuyRandomandStoreFruit"] = true,
         ["AutoBuySurprise"] = true,
     },
-    ["Invisible"] = true, -- Self Explain
+    ["Invisible"] = false, -- Self Explain
     ["IgnoreFriends"] = false, --Server Hop When Your friends in your server
-    ["GunMethod"] = false, --Use Melee,Gun Will automaticly disable invisible for things
+    ["GunMethod"] = true, --Use Melee,Gun Will automaticly disable invisible for things
     ["GunMethodSetting"] = {
         LessSusKillTest=true,
         StartHealth = 2000, -- Below Is Setting For Decrease Sus Kill From Gun Method
@@ -141,17 +141,17 @@ getgenv().Setting = {
     ["Weapons"] = { -- Select Weapon, Self Explain
         ["Melee"] = {
             ["Enable"] = true,
-            ["Delay"] = 2.5,
+            ["Delay"] = 3,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0.5,
-                    ["TimeToNextSkill"] = 0.1,
+                    ["HoldTime"] = 2,
+                    ["TimeToNextSkill"] = 0,
                 },
             [ "X"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0.5,
-                    ["TimeToNextSkill"] = 0.1,
+                    ["HoldTime"] = 0,
+                    ["TimeToNextSkill"] = 0,
                 },
 
                 ["C"] = {
@@ -211,16 +211,16 @@ getgenv().Setting = {
         },
         ["Gun"] = {
             ["Enable"] = true,
-            ["Delay"] = 1.5,
+            ["Delay"] = 3,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
                     ["HoldTime"] = 0,
-                    ["TimeToNextSkill"] = 0.1,
+                    ["TimeToNextSkill"] = 0,
                 },
                 ["X"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0.1,
+                    ["HoldTime"] = 0,
                     ["TimeToNextSkill"] = 0,
                 },
             },
