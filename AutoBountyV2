@@ -123,9 +123,9 @@ getgenv().Setting = {
         ["AutoBuyRandomandStoreFruit"] = true,
         ["AutoBuySurprise"] = true,
     },
-    ["Invisible"] = false, -- Self Explain
-    ["IgnoreFriends"] = false, --Server Hop When Your friends in your server
-    ["GunMethod"] = true, --Use Melee,Gun Will automaticly disable invisible for things
+    ["Invisible"] = true, -- Self Explain
+    ["IgnoreFriends"] = true, --Server Hop When Your friends in your server
+    ["GunMethod"] = false, --Use Melee,Gun Will automaticly disable invisible for things
     ["GunMethodSetting"] = {
         LessSusKillTest=true,
         StartHealth = 2000, -- Below Is Setting For Decrease Sus Kill From Gun Method
@@ -141,11 +141,11 @@ getgenv().Setting = {
     ["Weapons"] = { -- Select Weapon, Self Explain
         ["Melee"] = {
             ["Enable"] = true,
-            ["Delay"] = 3,
+            ["Delay"] = 2,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 2,
+                    ["HoldTime"] = 1.5,
                     ["TimeToNextSkill"] = 0,
                 },
             [ "X"] = {
@@ -194,7 +194,7 @@ getgenv().Setting = {
             },
         },
         ["Sword"] = {
-            ["Enable"] = false,
+            ["Enable"] = true,
             ["Delay"] = 1.5,
             ["Skills"] = {
                 ["Z"] = {
@@ -210,7 +210,7 @@ getgenv().Setting = {
             },
         },
         ["Gun"] = {
-            ["Enable"] = true,
+            ["Enable"] = false,
             ["Delay"] = 3,
             ["Skills"] = {
                 ["Z"] = {
