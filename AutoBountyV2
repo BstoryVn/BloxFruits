@@ -6,7 +6,7 @@ script_key="lqmAvKbLEiCLklZDjmPGlfmRaxKCcEFe";
 DelayTime = 300
 getgenv().FpsBoost = false
 getgenv().Setting = {
-    ["Team"] = "Pirates", --Marines
+    ["Team"] = "Marines", --Marines
     ["Webhook"] = {
         ["Url"] = "",
         ["Enabled"] = true,
@@ -23,8 +23,8 @@ getgenv().Setting = {
         Enable = false,
         Mode = "Lite",--Lite: Just Lower Graphics, Full: Completely Make All Objects Transparent
     },
-    ["Hide Theme"] = false,
-    ["3D Render Disable"] = false,
+    ["Hide Theme"] = true,
+    ["3D Render Disable"] = true,
     ["Theme"] = {
         ["Name"] = "Raiden",--"Old", "Raiden","Ayaka","Hutao","Yelan","Miko","Nahida","Ganyu","Keqing","Nilou","Barbara","Zhongli","Layla"
         ["Custom"] = {
@@ -38,7 +38,7 @@ getgenv().Setting = {
             ['button_color'] = Color3.fromRGB(255, 221, 252)
         },
     },
-    ["In Combat Reset"] = false, -- Shouldn't Cause Much False Resets, Enable This Make Farming Much Faster
+    ["In Combat Reset"] = true, -- Shouldn't Cause Much False Resets, Enable This Make Farming Much Faster
     ["BypassTP"] = {
         ["Enable"] = true,
         ["Attempt"] = 5, -- Tween If Failed After x Attempts
@@ -69,7 +69,7 @@ getgenv().Setting = {
     },
     AutoConfigMelee = true,
     AutoConfigSword = true,
-    AutoConfigFruit = true,
+    AutoConfigFruit = false,
     SwitchPlayerKeybind = "G", -- Except Y Keybind
     ["LimitServerHopTime"] ={ -- Only Hop After "Time" Seconds
         Enable = false,
@@ -124,7 +124,7 @@ getgenv().Setting = {
         ["AutoBuySurprise"] = true,
     },
     ["Invisible"] = true, -- Self Explain
-    ["IgnoreFriends"] = true, --Server Hop When Your friends in your server
+    ["IgnoreFriends"] = false, --Server Hop When Your friends in your server
     ["GunMethod"] = false, --Use Melee,Gun Will automaticly disable invisible for things
     ["GunMethodSetting"] = {
         LessSusKillTest=true,
@@ -199,28 +199,28 @@ getgenv().Setting = {
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0,
+                    ["HoldTime"] = 0.1,
                     ["TimeToNextSkill"] = 0,
                 },
                 ["X"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0,
+                    ["HoldTime"] = 0.2,
                     ["TimeToNextSkill"] = 0,
                 },
             },
         },
         ["Gun"] = {
             ["Enable"] = false,
-            ["Delay"] = 3,
+            ["Delay"] = 1.5,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0,
+                    ["HoldTime"] = 0.1,
                     ["TimeToNextSkill"] = 0,
                 },
                 ["X"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0,
+                    ["HoldTime"] = 0.1,
                     ["TimeToNextSkill"] = 0,
                 },
             },
