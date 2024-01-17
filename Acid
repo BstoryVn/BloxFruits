@@ -92,7 +92,7 @@ getgenv().Setting = {
         }
     },
     ["ChatKill"] = {
-        Enable = true,
+        Enable = false,
         Chat = {
             "Go Buy W-azure Now","I Got A Gaming Chair","I'm Just Too Good"
         },
