@@ -141,11 +141,11 @@ getgenv().Setting = {
     ["Weapons"] = { -- Select Weapon, Self Explain
         ["Melee"] = {
             ["Enable"] = true,
-            ["Delay"] = 2,
+            ["Delay"] = 4,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 1.5,
+                    ["HoldTime"] = 0,
                     ["TimeToNextSkill"] = 0,
                 },
             [ "X"] = {
