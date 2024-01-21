@@ -1,3 +1,8 @@
+game.StarterGui:SetCore("SendNotification", {
+    Icon = "";
+    Title = "Config By Bstory ", 
+    Text = "Arceus IOS X Bstory IOS"
+})
 if script_key then
 return
 end
