@@ -14,6 +14,16 @@ local games = {
     end
 }
 }
+if games[game.PlaceId] then	
+if games[game.PlaceId].Title == "Blox Fruits" then
+    local function notify(types, ...)
+            if types == "Notify" then
+            require(game.ReplicatedStorage.Notification).new(...):Display()
+            end
+    end
+    notify("Notify", games[game.PlaceId].Welcome())
+end
+end
 if script_key then
 return
 end
