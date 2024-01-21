@@ -1,29 +1,4 @@
-xwd = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
-Gamename = xwd.Name
-local games = {
-[game.PlaceId] = {
-    Title = "Auto Bounty By Bstory IOS",
-    Icons = "",
-    Welcome = function()
-            return tostring(
-            " "
-                ..
 
-                        Gamename.. "!" .. " Agreen Premium]"  .."\n Loadded Successfully W Azure Hub Crack Bstory IOS"
-            )
-    end
-}
-}
-if games[game.PlaceId] then	
-if games[game.PlaceId].Title == "Blox Fruits" then
-    local function notify(types, ...)
-            if types == "Notify" then
-            require(game.ReplicatedStorage.Notification).new(...):Display()
-            end
-    end
-    notify("Notify", games[game.PlaceId].Welcome())
-end
-end
 if script_key then
 return
 end
