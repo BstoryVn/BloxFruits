@@ -1,8 +1,19 @@
-game.StarterGui:SetCore("SendNotification", {
-    Icon = "";
-    Title = "Config By Bstory ", 
-    Text = "Arceus IOS X Bstory IOS"
-})
+xwd = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
+Gamename = xwd.Name
+local games = {
+[game.PlaceId] = {
+    Title = "Auto Bounty By Bstory IOS",
+    Icons = "",
+    Welcome = function()
+            return tostring(
+            " "
+                ..
+
+                        Gamename.. "!" .. " Agreen Premium]"  .."\n Loadded Successfully W Azure Hub Crack Bstory IOS"
+            )
+    end
+}
+}
 if script_key then
 return
 end
