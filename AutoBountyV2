@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/BstoryVn/BloxFruits/main/HAHAKID"))();
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BstoryVn/BloxFruits/main/WazureCrack"))();
 if script_key then
 return
 end
