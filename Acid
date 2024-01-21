@@ -58,7 +58,7 @@ getgenv().Setting = {
     ["Auto Use Race V4"] = true, -- No Way you are turning this off
     ["Auto Dash If Mink V4"] = false,
     ["Auto Dash If Ghoul V4"] = false,
-    ["Spam All Skill On Race Transform V4"] = false,
+    ["Spam All Skill On Race Transform V4"] = true,
     ["Failed To Load Data"] = {
         Rejoin = true,
         TimeToCheck = 30,
@@ -163,7 +163,7 @@ getgenv().Setting = {
         },
         ["Blox Fruit"] = {
             ["Enable"] = false,
-            ["Delay"] = 4,
+            ["Delay"] = 0,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
@@ -195,7 +195,7 @@ getgenv().Setting = {
         },
         ["Sword"] = {
             ["Enable"] = false,
-            ["Delay"] = 0.5,
+            ["Delay"] = 0.7,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
