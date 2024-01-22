@@ -1,30 +1,4 @@
---one src for skid 
-xwd = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
-Gamename = xwd.Name
-local games = {
-[game.PlaceId] = {
-    Title = "Blox Fruits",
-    Icons = "",
-    Welcome = function()
-            return tostring(
-            " "
-                ..
 
-                        Gamename.. "!" .. " Bstory IOS"  .."\n Loadded Successfully Config Auto Bounty W azure"
-            )
-    end
-}
-}
-if games[game.PlaceId] then	
-if games[game.PlaceId].Title == "Blox Fruits" then
-    local function notify(types, ...)
-            if types == "Notify" then
-            require(game.ReplicatedStorage.Notification).new(...):Display()
-            end
-    end
-    notify("Notify", games[game.PlaceId].Welcome())
-end
-end
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
