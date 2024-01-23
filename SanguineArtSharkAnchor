@@ -10,8 +10,8 @@ getgenv().TweenSpeed = 340 -- 350 max or Get Tp Back
         ["Melee"] = {["Enable"] = true,["Delay"] = 2,
           ["Skills"] = {
             ["Z"] = {["Enable"] = true,["HoldTime"] = 0,["TimeToNextSkill"] = 2,},
-            [ "X"] = {["Enable"] = true,["HoldTime"] = 0.5, ["TimeToNextSkill"] = 0,},
-            ["C"] = {["Enable"] = true,["HoldTime"] = 0.5, ["TimeToNextSkill"] = 0,},
+            [ "X"] = {["Enable"] = true,["HoldTime"] = 0, ["TimeToNextSkill"] = 0,},
+            ["C"] = {["Enable"] = true,["HoldTime"] = 0, ["TimeToNextSkill"] = 0,},
             },
         },
         ["Blox Fruit"] = {["Enable"] = false, ["Delay"] = 4,
