@@ -1,1 +1,2 @@
- player:Kick("Yt : Bstory Ytb , Let Go 700 Subcribers For Update")
+
+game.Players.LocalPlayer:Kick("Yt : Bstory Ytb , Let Go 700 Subcribers For Update")
