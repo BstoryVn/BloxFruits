@@ -1,0 +1,182 @@
+xwd = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
+Gamename = xwd.Name
+local games = {
+[game.PlaceId] = {
+    Title = "Blox Fruits",
+    Icons = "",
+    Welcome = function()
+            return tostring(
+            " "
+                ..
+
+                        Gamename.. "!" .. " Ryzen 5 Codex Team]"  .."\n Loadded Successfully Script Make By Bstory IOS"
+            )
+    end
+}
+}
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+    Name = "Agreen Gui Premium",
+    LoadingTitle = "Agreen Hub Premium",
+    LoadingSubtitle = "by Bstory",
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "Premium Bstory Hub"
+    },
+    Discord = {
+       Enabled = true,
+       Invite = "YHfbb3M3Kq", -- The Discord invite code, do not include discord.gg/
+       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+    KeySystem = false, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "Configs Agreen Premium",
+       Subtitle = "Key System",
+       Note = "Fb : Bstory IOS",
+       FileName = "Bstory Key",
+       SaveKey = true,
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = "bstoryios"
+    }
+ })
+game.StarterGui:SetCore("SendNotification", {
+    Icon = "";
+    Title = "Configs Agreen Premium", 
+    Text = "Youtuber : Bstory Ytb"
+})
+
+   local Tab = Window:CreateTab("Main", 16074348493) -- Title, Image
+   local Button = Tab:CreateButton({
+	Name = "Fps Boost",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BstoryVn/BloxFruits/main/FpsBoost'))()
+	end,
+})
+   local Toggle = Tab:CreateToggle({
+	Name = "Electric Claw Acid",
+	CurrentValue = false,
+	Flag = "Electric Acid", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BstoryVn/BloxFruits/main/AcidFree'))()
+	end,
+})
+local Toggle = Tab:CreateToggle({
+	Name = "Sanguine Art Shark Anchor",
+	CurrentValue = false,
+	Flag = "Sanguine Art Shark Anchor", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BstoryVn/BloxFruits/main/SanguineArtSharkAnchor'))()
+	end,
+})
+local Toggle = Tab:CreateToggle({
+	Name = "Sanguine Art Kistune",
+	CurrentValue = false,
+	Flag = "Sanguine Art Kistune", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BstoryVn/BloxFruits/main/SanguineArtKistune'))()
+	end,
+})
+local Toggle = Tab:CreateToggle({
+	Name = "Electric Claw Buddy",
+	CurrentValue = false,
+	Flag = "Electric Claw Buddy", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BstoryVn/BloxFruits/main/AutoBountyBuddy'))()
+	end,
+})
+local Toggle = Tab:CreateToggle({
+	Name = "Dragon Talon Magma V2",
+	CurrentValue = false,
+	Flag = "Dragon Talon Magma V2", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BstoryVn/BloxFruits/main/DragonTalonMagmaV2'))()
+	end,
+})
+local Toggle = Tab:CreateToggle({
+	Name = "Dragon Talon Venom",
+	CurrentValue = false,
+	Flag = "Dragon Talon Venom", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BstoryVn/BloxFruits/main/AutoBounty'))()
+	end,
+})
+local Toggle = Tab:CreateToggle({
+	Name = "GodHuman Cdk",
+	CurrentValue = false,
+	Flag = "GodHuman Cdk", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BstoryVn/BloxFruits/main/GodHumanCdk'))()
+	end,
+})
+local Toggle = Tab:CreateToggle({
+	Name = "T-Rex ( No Mele , Only Fruit )",
+	CurrentValue = false,
+	Flag = "GodHuman Cdk", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BstoryVn/BloxFruits/main/TrexSpam'))()
+	end,
+})
+local Tab = Window:CreateTab("Buy Mele", 16074348493)
+
+local Button = Tab:CreateButton({
+    Name = "Buy Black Leg",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyBlackLeg")
+    end
+})
+
+local Button = Tab:CreateButton({
+    Name = "Buy Electro",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectro")
+    end
+})
+
+local Button = Tab:CreateButton({
+    Name = "Buy Fishman Karate",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyFishmanKarate")
+    end
+})
+
+local Button = Tab:CreateButton({
+    Name = "Buy DragonClaw",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","1")
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","2")
+    end
+})
+local Button = Tab:CreateButton({
+    Name = "Buy SuperHuman",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySuperhuman")
+    end
+})
+local Button = Tab:CreateButton({
+    Name = "Buy Death Step",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDeathStep")
+    end
+})
+local Button = Tab:CreateButton({
+    Name = "Buy Sharkman Karate",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySharkmanKarate",true)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySharkmanKarate")
+    end
+})
+local Button = Tab:CreateButton({
+    Name = "Buy Electric Claw",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectricClaw")
+    end
+})
+local Button = Tab:CreateButton({
+    Name = "Buy Dragon Talon",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDragonTalon")
+    end
+})
+Rayfield:LoadConfiguration()
+
