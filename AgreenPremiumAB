@@ -1,114 +1,175 @@
-local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
- 
-local Frame = Instance.new("Frame")
-Frame.Size = UDim2.new(0, 400, 0, 300)
-Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
-Frame.AnchorPoint = Vector2.new(0.5, 0.5)
-Frame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-Frame.BorderSizePixel = 0
-Frame.Active = true
-Frame.Draggable = true
-Frame.Parent = ScreenGui
- 
-local FrameCorner = Instance.new("UICorner")
-FrameCorner.CornerRadius = UDim.new(0, 10)
-FrameCorner.Parent = Frame
- 
-local Close = Instance.new("TextButton")
-Close.Size = UDim2.new(0, 40, 0, 40)
-Close.Position = UDim2.new(1, -40, 0, 0)
-Close.BackgroundTransparency = 1
-Close.Text = "×"
-Close.TextScaled = true
-Close.TextColor3 = Color3.fromRGB(150, 150, 150)
-Close.Parent = Frame
-Close.MouseButton1Click:Connect(function()
-   ScreenGui:Destroy()
-end)
- 
-local Title = Instance.new("TextLabel")
-Title.Size = UDim2.new(1, 0, 0, 30)
-Title.Position = UDim2.new(0, 0, 0.05, 0)
-Title.Text = "Key System"
-Title.TextSize = 18
-Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-Title.BackgroundTransparency = 1
-Title.Parent = Frame
- 
-local Instructions = Instance.new("TextLabel")
-Instructions.Size = UDim2.new(1, 0, 0, 30)
-Instructions.Position = UDim2.new(0, 0, 0.2, 0)
-Instructions.Text = "Script Make By BstoryIOS#0204"
-Instructions.TextSize = 13
-Instructions.TextColor3 = Color3.fromRGB(150, 150, 150)
-Instructions.BackgroundTransparency = 1
-Instructions.Parent = Frame
- 
-local TextBox = Instance.new("TextBox")
-TextBox.Size = UDim2.new(0.8, 0, 0.2, 0)
-TextBox.Position = UDim2.new(0.1, 0, 0.4, 0)
-TextBox.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-TextBox.PlaceholderText = "Enter Key..."
-TextBox.Text = ""
-TextBox.TextSize = 18
-TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextBox.Parent = Frame
- 
-local TextBoxCorner = Instance.new("UICorner")
-TextBoxCorner.CornerRadius = UDim.new(0, 5)
-TextBoxCorner.Parent = TextBox
- 
-local GetKey = Instance.new("TextButton")
-GetKey.Size = UDim2.new(0.35, 0, 0.15, 0)
-GetKey.Position = UDim2.new(0.1, 0, 0.7, 0)
-GetKey.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-GetKey.Text = "Get Key"
-GetKey.TextSize = 18
-GetKey.TextColor3 = Color3.fromRGB(150, 150, 150)
-GetKey.Parent = Frame
- 
-local GetKeyCorner = Instance.new("UICorner")
-GetKeyCorner.CornerRadius = UDim.new(0, 5)
-GetKeyCorner.Parent = GetKey
- 
-local CheckKey = Instance.new("TextButton")
-CheckKey.Size = UDim2.new(0.35, 0, 0.15, 0)
-CheckKey.Position = UDim2.new(0.55, 0, 0.7, 0)
-CheckKey.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-CheckKey.Text = "Check Key"
-CheckKey.TextSize = 18
-CheckKey.TextColor3 = Color3.fromRGB(150, 150, 150)
-CheckKey.Parent = Frame
- 
-local CheckKeyCorner = Instance.new("UICorner")
-CheckKeyCorner.CornerRadius = UDim.new(0, 5)
-CheckKeyCorner.Parent = CheckKey
- 
-GetKey.MouseButton1Click:Connect(function()
-   setclipboard("Your Way How To Get The Key")
-end)
- 
-local function validateKey(key)
-    return key == "bstory" -- Replace this with your key
-end
- 
-CheckKey.MouseButton1Click:Connect(function()
-    local enteredKey = TextBox.Text
-    if validateKey(enteredKey) then
-        TextBox.PlaceholderText = "Correct Key!"
-        TextBox.Text = ""
-        wait(1)
-        ScreenGui:Destroy()
- 
--- Put Your Script Here
-loadstring(game:HttpGet("https://raw.githubusercontent.com/BstoryVn/BloxFruits/main/ConfigAgreenPremium"))()
- 
-    else
-        TextBox.PlaceholderText = "Invalid key. Try again."
-        TextBox.Text = ""
-        wait(1)
-        TextBox.PlaceholderText = "Enter Key ..."
-        TextBox.Text = ""
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+    Name = "Agreen Gui Premium",
+    LoadingTitle = "Agreen Hub Premium",
+    LoadingSubtitle = "by Bstory",
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "Premium Bstory Hub"
+    },
+    Discord = {
+       Enabled = true,
+       Invite = "YHfbb3M3Kq", -- The Discord invite code, do not include discord.gg/
+       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+    KeySystem = true, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "Configs Agreen Premium",
+       Subtitle = "Key System",
+       Note = "Fb : Bstory IOS",
+       FileName = "Bstory Key",
+       SaveKey = true,
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = "bstoryios"
+    }
+ })
+
+Rayfield:Notify({
+    Title = "Hi Player , Good Luck ",
+    Content = "Script By Bstory IOS",
+    Duration = 6.5,
+    Image = 16074348493,
+    Actions = { -- Notification Buttons
+       Ignore = {
+          Name = "Okay!",
+          Callback = function()
+            print("The user tapped Okay!")
+         end
+      },
+   },
+   })
+   local Tab = Window:CreateTab("Main", 16074348493) -- Title, Image
+   local Button = Tab:CreateButton({
+	Name = "Fps Boost",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BstoryVn/BloxFruits/main/FpsBoost'))()
+	end,
+})
+   local Toggle = Tab:CreateToggle({
+	Name = "Electric Claw Acid",
+	CurrentValue = false,
+	Flag = "Electric Acid", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BstoryVn/BloxFruits/main/AcidFree'))()
+	end,
+})
+local Toggle = Tab:CreateToggle({
+	Name = "Sanguine Art Shark Anchor",
+	CurrentValue = false,
+	Flag = "Sanguine Art Shark Anchor", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BstoryVn/BloxFruits/main/SanguineArtSharkAnchor'))()
+	end,
+})
+local Toggle = Tab:CreateToggle({
+	Name = "Sanguine Art Kistune",
+	CurrentValue = false,
+	Flag = "Sanguine Art Kistune", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BstoryVn/BloxFruits/main/SanguineArtKistune'))()
+	end,
+})
+local Toggle = Tab:CreateToggle({
+	Name = "Electric Claw Buddy",
+	CurrentValue = false,
+	Flag = "Electric Claw Buddy", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BstoryVn/BloxFruits/main/AutoBountyBuddy'))()
+	end,
+})
+local Toggle = Tab:CreateToggle({
+	Name = "Dragon Talon Magma V2",
+	CurrentValue = false,
+	Flag = "Dragon Talon Magma V2", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BstoryVn/BloxFruits/main/DragonTalonMagmaV2'))()
+	end,
+})
+local Toggle = Tab:CreateToggle({
+	Name = "Dragon Talon Venom",
+	CurrentValue = false,
+	Flag = "Dragon Talon Venom", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BstoryVn/BloxFruits/main/AutoBounty'))()
+	end,
+})
+local Toggle = Tab:CreateToggle({
+	Name = "GodHuman Cdk",
+	CurrentValue = false,
+	Flag = "GodHuman Cdk", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BstoryVn/BloxFruits/main/GodHumanCdk'))()
+	end,
+})
+local Toggle = Tab:CreateToggle({
+	Name = "T-Rex ( No Mele , Only Fruit )",
+	CurrentValue = false,
+	Flag = "GodHuman Cdk", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BstoryVn/BloxFruits/main/TrexSpam'))()
+	end,
+})
+local Tab = Window:CreateTab("Buy Mele", 16074348493)
+
+local Button = Tab:CreateButton({
+    Name = "Buy Black Leg",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyBlackLeg")
     end
-end)
+})
+
+local Button = Tab:CreateButton({
+    Name = "Buy Electro",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectro")
+    end
+})
+
+local Button = Tab:CreateButton({
+    Name = "Buy Fishman Karate",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyFishmanKarate")
+    end
+})
+
+local Button = Tab:CreateButton({
+    Name = "Buy DragonClaw",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","1")
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","2")
+    end
+})
+local Button = Tab:CreateButton({
+    Name = "Buy SuperHuman",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySuperhuman")
+    end
+})
+local Button = Tab:CreateButton({
+    Name = "Buy Death Step",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDeathStep")
+    end
+})
+local Button = Tab:CreateButton({
+    Name = "Buy Sharkman Karate",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySharkmanKarate",true)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySharkmanKarate")
+    end
+})
+local Button = Tab:CreateButton({
+    Name = "Buy Electric Claw",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectricClaw")
+    end
+})
+local Button = Tab:CreateButton({
+    Name = "Buy Dragon Talon",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDragonTalon")
+    end
+})
+Rayfield:LoadConfiguration()
+
