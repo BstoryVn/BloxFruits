@@ -1,3 +1,19 @@
+xwd = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
+Gamename = xwd.Name
+local games = {
+[game.PlaceId] = {
+    Title = "Blox Fruits",
+    Icons = "",
+    Welcome = function()
+            return tostring(
+            " "
+                ..
+
+                        Gamename.. "!" .. " Ryzen 5 Codex Team]"  .."\n Loadded Successfully W azure Hub Crack By Bstory IOS"
+            )
+    end
+}
+}
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
     Name = "Agreen Gui Premium",
