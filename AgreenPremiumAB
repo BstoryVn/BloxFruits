@@ -1,7 +1,7 @@
 
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
-    Name = "Agreen Gui Premium",
+    Name = "Configs Agreen Premium",
     LoadingTitle = "Agreen Hub Premium",
     LoadingSubtitle = "by Bstory",
     ConfigurationSaving = {
