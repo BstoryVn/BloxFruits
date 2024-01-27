@@ -4,7 +4,7 @@ end
 --Put Your Key Between ""
 script_key="lqmAvKbLEiCLklZDjmPGlfmRaxKCcEFe";
 DelayTime = 300
-getgenv().FpsBoost = true
+getgenv().FpsBoost = false
 getgenv().Setting = {
     ["Team"] = "Pirates", --Marines
     ["Webhook"] = {
@@ -26,7 +26,7 @@ getgenv().Setting = {
     ["Hide Theme"] = true,
     ["3D Render Disable"] = true,
     ["Theme"] = {
-        ["Name"] = "Miko",--"Old", "Raiden","Ayaka","Hutao","Yelan","Miko","Nahida","Ganyu","Keqing","Nilou","Barbara","Zhongli","Layla"
+        ["Name"] = "Raiden",--"Old", "Raiden","Ayaka","Hutao","Yelan","Miko","Nahida","Ganyu","Keqing","Nilou","Barbara","Zhongli","Layla"
         ["Custom"] = {
             ["Enable"] = false,
             ['char_size'] = UDim2.new(0.668, 0, 1.158, 0),
@@ -58,7 +58,7 @@ getgenv().Setting = {
     ["Auto Use Race V4"] = true, -- No Way you are turning this off
     ["Auto Dash If Mink V4"] = false,
     ["Auto Dash If Ghoul V4"] = false,
-    ["Spam All Skill On Race Transform V4"] = true,
+    ["Spam All Skill On Race Transform V4"] = false,
     ["Failed To Load Data"] = {
         Rejoin = true,
         TimeToCheck = 30,
@@ -68,8 +68,8 @@ getgenv().Setting = {
         Words = { "Hacker", "Exploiter", "Scripter", "Script", "Hack"}
     },
     AutoConfigMelee = true,
-    AutoConfigSword = false,
-    AutoConfigFruit = false,
+    AutoConfigSword = true,
+    AutoConfigFruit = true,
     SwitchPlayerKeybind = "G", -- Except Y Keybind
     ["LimitServerHopTime"] ={ -- Only Hop After "Time" Seconds
         Enable = false,
@@ -123,7 +123,7 @@ getgenv().Setting = {
         ["AutoBuyRandomandStoreFruit"] = true,
         ["AutoBuySurprise"] = true,
     },
-    ["Invisible"] = true, -- Self Explain
+    ["Invisible"] = false, -- Self Explain
     ["IgnoreFriends"] = false, --Server Hop When Your friends in your server
     ["GunMethod"] = false, --Use Melee,Gun Will automaticly disable invisible for things
     ["GunMethodSetting"] = {
@@ -145,25 +145,25 @@ getgenv().Setting = {
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 1.5,
-                    ["TimeToNextSkill"] = 0,
+                    ["HoldTime"] = 1.4,
+                    ["TimeToNextSkill"] = 1,
                 },
             [ "X"] = {
                     ["Enable"] = true,
                     ["HoldTime"] = 0,
-                    ["TimeToNextSkill"] = 0,
+                    ["TimeToNextSkill"] = 0.3,
                 },
 
                 ["C"] = {
                     ["Enable"] = true,
                     ["HoldTime"] = 0,
-                    ["TimeToNextSkill"] = 0,
+                    ["TimeToNextSkill"] = 0.5,
                 },
             },
         },
         ["Blox Fruit"] = {
             ["Enable"] = false,
-            ["Delay"] = 0,
+            ["Delay"] = 4,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
@@ -195,7 +195,7 @@ getgenv().Setting = {
         },
         ["Sword"] = {
             ["Enable"] = false,
-            ["Delay"] = 0.7,
+            ["Delay"] = 0.5,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
@@ -211,12 +211,12 @@ getgenv().Setting = {
         },
         ["Gun"] = {
             ["Enable"] = true,
-            ["Delay"] = 1.5,
+            ["Delay"] = 2,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
                     ["HoldTime"] = 0,
-                    ["TimeToNextSkill"] = 0,
+                    ["TimeToNextSkill"] = 1.2,
                 },
                 ["X"] = {
                     ["Enable"] = true,
