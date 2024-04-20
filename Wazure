@@ -28,7 +28,7 @@ getgenv().WeaponsSetting = {
     },
     ["Blox Fruit"] = {
         ["Enable"] = false,
-        ["Delay"] = 4,
+        ["Delay"] = 0,
         ["SwitchNextWeaponIfCooldown"] = true,
         ["Skills"] = {
             ["Z"] = {
@@ -45,31 +45,31 @@ getgenv().WeaponsSetting = {
             ["C"] = {
                 ["Enable"] = true,
                 ["HoldTime"] = 0.5,
-                ["TimeToNextSkill"] = 0.5,
+                ["TimeToNextSkill"] = 0,
             },
             ["V"] = {
                 ["Enable"] = true,
                 ["HoldTime"] = 0.1,
-                ["TimeToNextSkill"] = 0.5,
+                ["TimeToNextSkill"] = 0,
             },
             ["F"] = {
                 ["Enable"] = true,
                 ["HoldTime"] = 0.1,
-                ["TimeToNextSkill"] = 0.5,
+                ["TimeToNextSkill"] = 0,
             },
         },
     },
     ["Sword"] = {
         ["Enable"] = false,
-        ["Delay"] = 0,
+        ["Delay"] = 0.5,
         ["Skills"] = {
             ["Z"] = {
-                ["Enable"] = false,
+                ["Enable"] = true,
                 ["HoldTime"] = 0,
                 ["TimeToNextSkill"] = 0,
             },
             ["X"] = {
-                ["Enable"] = false,
+                ["Enable"] = true,
                 ["HoldTime"] = 0,
                 ["TimeToNextSkill"] = 0,
             },
@@ -93,7 +93,7 @@ getgenv().WeaponsSetting = {
     },
 }
 getgenv().Theme = { -- getgenv().Theme = false if you want to disable
-    OldTheme = false,
+    OldTheme = true,
     Name="Ayaka", --"Raiden","Ayaka","Hutao","Yelan","Miko","Nahida","Ganyu","Keqing","Nilou","Barbara","Zhongli","Layla"
     Custom={
             ["Enable"] = false,
