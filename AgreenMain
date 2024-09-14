@@ -4,7 +4,7 @@
 game.StarterGui:SetCore("SendNotification", {
     Title = "Project By BstoryIOS ⚙️",
     Text = "🌊Telegram @bstoryios🌊",
-    Duration = 5
+    Duration = 10
 })
 
 
